@@ -1,65 +1,75 @@
-/* styles.css */
+/* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
+    background-color: #f5f5f5;
 }
 
+/* 头部样式 */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header h1 {
-    margin: 0;
+.logo img {
+    height: 60px; /* 根据实际Logo尺寸调整 */
 }
 
+/* 导航栏样式 */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-}
-
-h2 {
-    color: #4CAF50;
-}
-
-h3 {
     color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.research-item {
+nav ul li a:hover {
+    color: #4CAF50; /* 主题绿色 */
+}
+
+/* 三列布局 */
+.content-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 欢迎标语部分 */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.welcome-section h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 5px 0;
+.welcome-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
